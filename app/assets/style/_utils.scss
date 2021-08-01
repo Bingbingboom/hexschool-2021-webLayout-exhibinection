@@ -1,0 +1,60 @@
+.fw-medium{
+    font-weight: 500;
+}
+
+.logo-hover:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.calIcon{
+    width: 24px;
+    height: 24px;
+}
+
+
+// order timeline
+.timeline-section {
+    position: relative;
+    margin: 20px 0;
+    @include media-breakpoint-up(md){
+        margin: 20px 0 28px 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $success;
+    }
+    p{
+        font-size: 12px;
+        @include media-breakpoint-up(sm){
+            font-size: 14px;
+        }
+        @include media-breakpoint-up(lg){
+            font-size: 16px;
+        }
+    }
+}
+.timeline-pointer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transform: translate(-50%, -30%);
+        background-color: #fff;
+        border: 1px solid $success;
+        z-index: 1;
+    }
+    &.active::before{
+        background-color: $success;
+    }
+}

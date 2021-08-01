@@ -1,0 +1,258 @@
+// Header
+.header{
+    padding: 18px 0;
+    border: 1px solid #95989A;
+    @include media-breakpoint-up(md){
+        padding: 28px 0;
+    }
+    h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.tickets{
+    color: black;
+    margin-right: 15px;
+    @include media-breakpoint-up(sm){
+        margin-right: 0;
+    }
+    &-num{
+        top: -50%;
+        right: -25%;
+        transform: translate(25%,50%);
+        background: $success;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFF;
+        border-radius: 9px;
+        padding: 2px 6px;
+    }
+}
+
+
+// 購物車列表 Modal
+.modal-open{
+    padding-right: 0 !important;
+}
+.modal.right{
+    .modal-dialog{
+        position: fixed;
+        top: 63px;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        transform: translate3d(0%, 0, 0);
+        max-width: 540px;
+        @include media-breakpoint-up(md){
+            top: 83px;
+        }
+    }
+    .modal-content{
+        height: 100%;
+        overflow-y: auto;
+        background-color: #190014;
+    }
+    .modal-body{
+        overflow-y: scroll;
+    }
+}
+.modal {
+    &-content {
+        border-radius: 0;
+        border: none;
+    }
+    &-header {
+        border-bottom: none;
+    }
+    &-body{
+        margin-right: -9px;
+        padding-right: 4px;
+        @include media-breakpoint-up(md){
+            padding-right: 15px;
+            margin-right: -15px;
+        }
+        &::-webkit-scrollbar{
+            width: 2px;
+            // background-color: $success;
+            background-color: #E9ECEF;
+            border-radius: 4px 0px 0px 4px;
+        }
+        &::-webkit-scrollbar-thumb{
+            // background-color: #E9ECEF;
+            background-color: $success;
+            border-radius: 4px;
+            min-height: 81px;
+        }
+    }
+    &-footer {
+        border-top: none;
+    }
+}
+.modal-backdrop{
+    background: transparent;
+}
+// Cart List
+.cart{
+    &-img{
+        width: 120px;
+        height: 120px;
+        img{
+            object-fit: cover;
+        }
+    }
+    &-list{
+        padding: 36px 16px 16px 16px;
+        @include media-breakpoint-up(md){
+            padding: 28px 32px 24px 32px;
+        }
+    }
+    &-delete{
+        font-size: 24px;
+        line-height: 1;
+        top: 4px;
+        left: 4px;
+    }
+    &-btn{
+        padding: 10px 27px;
+        background: #FFF;
+    }
+}
+
+
+// Banner
+.banner{
+    background-image: url("../images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    li{
+        width: 50%;
+        @include media-breakpoint-up(sm){
+            width: 30%;
+        }
+        @include media-breakpoint-up(md){
+            width: 16.7%;
+        }
+    }
+}
+
+// Nav
+.nav-scroller {
+    height: 52px;  /* 隱藏下方捲軸 */
+    overflow-y: hidden; 
+    border-bottom: 1px solid #707070;
+    .nav{
+        flex-wrap: nowrap;
+        padding-bottom: 16px; /* 隱藏下方捲軸 */
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.nav-link{
+    border-bottom: 1px solid transparent;
+    padding-top: 16px;
+    padding-bottom: 0;
+    &:hover{
+        border-bottom: 1px solid $success;
+        transition: all 0.3s;
+    }
+}
+
+
+// 表尾 like
+.exhibitCard{
+    h4,p{
+        font-size: 16px;
+        @include media-breakpoint-up(md){
+            font-size: 20px;
+        }
+    }
+}
+
+.swiper-container{
+    width: 100%;
+    height: 100%;
+    
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 135px !important; 
+        @include media-breakpoint-up(md){
+            width: 180px !important; 
+        }
+        @include media-breakpoint-up(lg){
+            width: 240px !important; 
+        }
+        @include media-breakpoint-up(xl){
+            width: 350px !important; 
+        }
+    }
+    .card{
+        width: 100%;
+    }
+    .card-img-top{
+        height: 135px;
+        object-fit: cover;
+        @include media-breakpoint-up(md){
+            height: 180px; 
+        }
+        @include media-breakpoint-up(lg){
+            height: 240px;
+        }
+        @include media-breakpoint-up(xl){
+            height: 350px;
+        }
+    }
+}
+
+.exhibitCardMobile{
+    .card-img-top{
+        width: 100%;
+        height: 345px;
+        object-fit: cover;
+    }
+}
+
+
+// 表尾訂閱
+.subscribe{
+    background-image: url("../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    &-form{
+        width: 100%;
+        @include media-breakpoint-up(md){
+            width: 60%;
+        }
+        @include media-breakpoint-up(lg){
+            width: 33.3%;
+        }
+
+    }
+    &-input{
+        border: 1px solid #CED4DA;
+        border-radius: 4px 0 0 4px;
+        width: 60%;
+    }
+    &-btn{
+        border: 1px solid #D80EB1;
+        border-radius: 0 4px 4px 0;
+        width: 40%;
+    }
+}
+  
+
+// Footer
+.footer{
+    padding: 20px 0 16px 0;
+    @include media-breakpoint-up(md){
+        padding: 28px 0; 
+    }
+    &-logo{
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,45 @@
+// 熱門特展
+.popular{
+    .card{
+        background-color: #EFEFEF;
+        border-radius: 0;
+    }
+    .card-img-top{
+        height: 345px;
+        object-fit: cover;
+        @include media-breakpoint-up(md){
+            height: 100%;
+        }
+        @include media-breakpoint-up(lg){
+            height: 350px;
+        }
+    }
+    &-body{
+        @include media-breakpoint-up(md){
+            width: 75%;
+        }
+    }
+    &-description{
+        @include media-breakpoint-up(md){
+            font-size: 20px;
+        }
+    }
+}
+
+
+// 直播回顧
+.live{
+    background-image: url(../images/people2.png);
+    background-size: cover;
+    background-position: center;
+    &-body{
+        width: 100%;
+        background-color: #190014CC;
+        @include media-breakpoint-up(md){
+            width: 41.7%;
+        }
+    }
+    &-titleLine{
+        border-right: 1px solid #FFF;
+    }
+}

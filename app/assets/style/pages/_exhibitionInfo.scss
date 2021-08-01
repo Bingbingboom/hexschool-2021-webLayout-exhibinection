@@ -1,0 +1,46 @@
+.exhibitInfo{
+    &-img{
+        height: 256px;
+        object-fit: cover;
+    }
+    &-date{
+        position: absolute;
+        right: 0;
+        top: 53px;
+        width: 65px;
+    }
+    &-choose{
+        @include media-breakpoint-up(md){
+            height: 255px;
+        }
+    }
+    &-price{
+        @include media-breakpoint-up(md){
+            border-right: 1px solid #707070;
+        }
+    }
+    &-ticketType{
+        a{
+            border-bottom: 1px solid transparent;
+            &.active, &:hover, &:focus{
+                border-bottom: 1px solid $success;
+            }
+        }
+    }
+    &-banner{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    &-asideImg{
+        width: 100%;
+        height: 559px;
+        object-fit: cover;
+    }
+    &-text{
+        color: #707070;
+        &:not(:last-child){
+            text-indent: 32px;
+        }
+    }
+}

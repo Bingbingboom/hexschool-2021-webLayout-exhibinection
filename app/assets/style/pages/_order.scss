@@ -1,0 +1,33 @@
+.orderList{
+    &-img{
+        height: 84px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.orderHeight{
+    min-height: calc(100vh - 240px);
+}
+
+.orderInfoHeight{
+    height: auto;
+    @include media-breakpoint-up(md){
+        min-height: calc(100vh - 240px);
+    }
+}
+
+.orderSuccessHeight{
+    min-height: calc(100vh - 83px);
+}
+
+.mb-medium{
+    margin-bottom: 52px;
+    @include media-breakpoint-up(md){
+        margin-bottom: 54px;
+    }
+}
+
+.checkIcon{
+    font-size: 44px;
+}
