@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXHIBINECTION</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container d-flex justify-content-between align-items-center position-relative">
+        <div></div>
+        <h1 class="mb-0 position-absolute"><a href="index.html" class="link-primary h5 mb-0 logo-hover">EXHIBINECTION</a></h1>
+        <ul class="d-flex align-items-center list-unstyled mb-0">
+          <li>
+            <a href="#" class="d-none d-md-block link-dark me-11">Sign in</a>
+          </li>
+          <li>
+            <a href="#" class="d-none d-md-block link-light me-11">Sign up</a>
+          </li>
+          <!-- 購物車列表按鈕 -->
+          <li>
+            <a href="#" class="tickets position-relative"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span class="material-icons align-middle">
+                confirmation_number
+              </span>
+              <span class="tickets-num position-absolute">3</span>
+            </a>
+          </li>
+        </ul>
+        <!-- 購物車列表 Modal -->
+        <div class="modal right fade modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content px-6 px-md-11 pt-8 pt-md-11 pb-9">
+              <div class="modal-header p-0 mb-4">
+                <h5 class="modal-title h3 fw-bold text-white" id="exampleModalLabel">Cart List</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body py-0 ps-0 mb-8">
+                <ul class="cart list-unstyled mb-0">
+                  <li class="cart-list card border-0 mb-2 mb-md-4 position-relative">
+                    <!-- 刪除 icon -->
+                    <div class="cart-delete position-absolute">
+                      <a href="#" class="calIcon">
+                        <i class="material-icons">
+                          close
+                        </i>
+                      </a>
+                    </div>
+                    <div class="d-flex">
+                      <!-- img -->
+                      <div class="cart-img flex-shrink-0">
+                        <img src="assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="" class="h-100">
+                      </div>
+                      <div class="flex-grow-1 ms-6">
+                        <div class="card-body p-0 d-flex justify-content-between align-items-center">
+                          <!-- 展覽票資訊 -->
+                          <div>
+                            <h5 class="card-title fs-7 lh-base fw-bold mb-1">2020 台味設計展</h5>
+                            <p class="card-text fs-7 lh-base fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <p class="card-text fs-7 lh-base text-dark mb-5">全票</p>
+                            <p class="card-text h6 lh-base fw-bold mb-0">NT$350</p>
+                          </div>
+                          <!-- 數量選項 -->
+                          <div class="d-flex flex-column flex-md-row align-items-center">
+                            <a href="#" class="calIcon order-3 order-md-1">
+                              <i class="material-icons">
+                                remove
+                              </i>
+                            </a>
+                            <p class="h6 fw-bold lh-base order-2 mx-md-4 my-1">01</p>
+                            <a href="#" class="calIcon order-1 order-md-3">
+                              <i class="material-icons">
+                                add
+                              </i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart-list card border-0 mb-2 mb-md-4 position-relative">
+                    <!-- 刪除 icon -->
+                    <div class="cart-delete position-absolute">
+                      <a href="#" class="calIcon">
+                        <i class="material-icons">
+                          close
+                        </i>
+                      </a>
+                    </div>
+                    <div class="d-flex">
+                      <!-- img -->
+                      <div class="cart-img flex-shrink-0">
+                        <img src="assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="" class="h-100">
+                      </div>
+                      <div class="flex-grow-1 ms-6">
+                        <div class="card-body p-0 d-flex justify-content-between align-items-center">
+                          <!-- 展覽票資訊 -->
+                          <div>
+                            <h5 class="card-title fs-7 lh-base fw-bold mb-1">2020 台味設計展</h5>
+                            <p class="card-text fs-7 lh-base fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <p class="card-text fs-7 lh-base text-dark mb-5">全票</p>
+                            <p class="card-text h6 lh-base fw-bold mb-0">NT$350</p>
+                          </div>
+                          <!-- 數量選項 -->
+                          <div class="d-flex flex-column flex-md-row align-items-center">
+                            <a href="#" class="calIcon order-3 order-md-1">
+                              <i class="material-icons">
+                                remove
+                              </i>
+                            </a>
+                            <p class="h6 fw-bold lh-base order-2 mx-md-4 my-1">01</p>
+                            <a href="#" class="calIcon order-1 order-md-3">
+                              <i class="material-icons">
+                                add
+                              </i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart-list card border-0 mb-0 position-relative">
+                    <!-- 刪除 icon -->
+                    <div class="cart-delete position-absolute">
+                      <a href="#" class="calIcon">
+                        <i class="material-icons">
+                          close
+                        </i>
+                      </a>
+                    </div>
+                    <div class="d-flex">
+                      <!-- img -->
+                      <div class="cart-img flex-shrink-0">
+                        <img src="assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="" class="h-100">
+                      </div>
+                      <div class="flex-grow-1 ms-6">
+                        <div class="card-body p-0 d-flex justify-content-between align-items-center">
+                          <!-- 展覽票資訊 -->
+                          <div>
+                            <h5 class="card-title fs-7 lh-base fw-bold mb-1">2020 台味設計展</h5>
+                            <p class="card-text fs-7 lh-base fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <p class="card-text fs-7 lh-base text-dark mb-5">全票</p>
+                            <p class="card-text h6 lh-base fw-bold mb-0">NT$350</p>
+                          </div>
+                          <!-- 數量選項 -->
+                          <div class="d-flex flex-column flex-md-row align-items-center">
+                            <a href="#" class="calIcon order-3 order-md-1">
+                              <i class="material-icons">
+                                remove
+                              </i>
+                            </a>
+                            <p class="h6 fw-bold lh-base order-2 mx-md-4 my-1">01</p>
+                            <a href="#" class="calIcon order-1 order-md-3">
+                              <i class="material-icons">
+                                add
+                              </i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer justify-content-between p-0">
+                <div class="d-flex text-white">
+                  <p class="h6 lh-base fw-medium me-9 mb-0">小計</p>
+                  <p class="h6 lh-base fw-medium mb-0">NT$1050</p>
+                </div>
+                <a href="orderConfirm.html" class="cart-btn btn btn-outline-primary m-0">前往結帳</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal END -->
+      </div>
+    </div>
+
+    
+
+    
+<div class="container">
+    <div class="row justify-content-center align-items-center orderSuccessHeight">
+        <div class="col-md-6">
+            <!-- 完成訂購 icon -->
+            <div class="row justify-content-center mb-9">
+                <div class="col-6 col-md-4 text-center">
+                    <i class="checkIcon text-primary material-icons-outlined mb-3">
+                        check_circle
+                    </i>
+                    <h2 class="text-primary h6 lh-base">完成訂購</h2>
+                </div>
+            </div>
+            <p class="mb-13">您的展覽憑證代碼為：</p>
+            <div class="row justify-content-center mb-13 mb-md-14">
+                <div class="col-6 col-md-4 text-center">
+                    <h3 class="text-primary h5 lh-base">qr147352</h3>
+                </div>
+            </div>
+            <p class="mb-17 mb-md-18">恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~ 2020/10/31 於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。</p>
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <a href="exhibition.html" class="btn btn-outline-primary w-100 py-3">
+                        繼續瀏覽
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="exhibitionInfo.html" class="btn btn-success w-100 py-3">
+                        看展去
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
